@@ -1,19 +1,22 @@
-# TÍTULO DO PROJETO
+# Pomodoro
 
-`CURSO`
+`CURSO: Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`DISCIPLINA: Eixo 1 - Projeto: Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`SEMESTRE: 2021/2 - 1º período`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de uma ferramenta que proporcione a estudantes e profissionais meios de gestão do tempo e organização de conteúdos e/ou tarefas com base na técnica Pomodoro, possibilitando um melhor proveito e produtividade das atividades a serem realizadas, bem como garantindo um melhor equilíbrio de vida na rotina cotidiana. 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Allana Tavares Bastos
+* Luiz Felipe Vitor
+* Mariane Serapião Alves
+* Michelle Aline Ferreira
+* Ruyller Ferreira Silva
+* Vitor Martins de Sant´Anna
+
 
 ## Orientador
 
