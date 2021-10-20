@@ -28,3 +28,46 @@ Atualmente vivemos em ambientes repletos de muita informação, o que facilita a
 ## Público-Alvo
 
 Mesmo que todas as pessoas enfrentem de alguma forma problemas com o gerenciamento de tempo, o foco deste trabalho está no público que desenvolve atividades remotamente com a pandemia. Mais especificamente, serão atendidos estudantes de ensino fundamental, médio e universitário, indivíduos em preparação para processos seletivos/ concursos públicos e profissionais que atuem remotamente e que utilizem  computadores e dispositivos móveis conectados à internet como ferramentas de trabalho e estudo de maneira frequente. 
+
+# Especificações do projeto
+
+A determinação exata do problema, suas personas, requisitos funcionais e não-funcionais foram acordadas em reuniões online entre os membros da equipe. Foram reunidas informações e observações dos membros, e, complementarmente, foram coletadas informações com base em um roteiro de entrevistas semi-estruturado aplicado por conveniência. Os detalhes levantados nesse processo auxiliaram na construção de personas e histórias de usuários mais completas.
+
+## Personas
+
+## História de usuário
+
+A partir das características, problemas e rotinas das personas identificadas, foram registradas as seguintes histórias:
+
+## Requisitos do projeto
+
+O escopo funcional do projeto abrange duas principais partes: requisitos funcionais, descrevendo  possibilidades  de interação  dos  usuários, e requisitos  não  funcionais, descrevendo os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir, acompanhados por algumas limitações identificadas. Tais informações foram dispostas em tabelas para uma melhor compreensão.
+
+### Requisitos funcionais
+
+### Requisitos não-funcionais
+
+## Restrições
+
+# Metodologia
+
+A  metodologia  contempla  as  definições  de  ferramental  utilizado  pela  equipe  tanto  para  a
+manutenção dos códigos e demais artefatos quanto para a organização do time na execução
+das tarefas do projeto.
+
+## Relação de Ambientes de Trabalho
+
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos
+ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+
+## Gestão de código fonte
+
+Para  gestão  do  código  fonte  do  software  desenvolvido  pela  equipe,  o  grupo  utiliza  um
+processo  baseado  no  Git  Flow, em que as manutenções no código são feitas em branches separados do branch principal Master. Sendo identificados como Release, Develop e Feature. 
+
+O código fonte ficará hospedado no Github, onde estará disponível o histórico de edições e releases do projeto. Isso oferece um melhor controle e transparência sobre o processo de desenvolvimento.
+
+## Gerenciamento do Projeto
+
+A equipe usa metodologias ágeis, utilizando o Scrum como base para a definição do processo de desenvolvimento.A equipe está organizada da seguinte maneira:
+
