@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/cronometro.css">
+  <link rel="shortcut icon" href="img/favcon.jpg" type="image/x-icon">
+  <title>POMODORANDO</title>
+</head>
+
+<body>
+
+  <!--Titulo INICIO-->
+  <h2 class=titulo>Pomodorando</h2>
+  <p>Para uma vida ativa, produtiva e saudável! :)</p>
+  <!--Titulo FIM-->
+
+
+  <!--MENU LATERAL INICIO-->
+  <input type="checkbox" id="check">
+  <label for="check"><img src="/img/barra-de-menu.png" alt="menu" class="menu"></label>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Configurações</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+  </nav>
+  <!--MENU LATERAL FIM-->
+
+
+  <!--CRONOMETRO INICIO-->
+  <div class="max-width">
+    <h1 id="counter">00:00:00</h1><br>
+    <button class="start" onclick="start();">Iniciar</button>
+    <button class="pause" onclick="pause();">Pausar</button>
+    <button class="stop" onclick="stop();">Parar</button><br>
+  </div>
+  <!--CRONOMETRO FIM-->
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
