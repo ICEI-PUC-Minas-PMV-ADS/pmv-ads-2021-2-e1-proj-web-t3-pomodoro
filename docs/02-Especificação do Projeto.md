@@ -9,6 +9,13 @@ A determinação exata do problema, suas personas, requisitos funcionais e não-
 | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Izabela%20Correa.png" alt="Izabela Correa" width="100" height="100"/>     | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Evaristo%20Ant%C3%B4nio.png" alt="Evaristo Antônio" width="100" height="100"/>       | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Marcel.png" alt="Marcel" width="100" height="100"/> |
 | Paragraph   | Text        | And more      |
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is  ggagreag      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
 ## História de usuário
 
 A partir das características, problemas e rotinas das personas identificadas, foram registradas as seguintes histórias:

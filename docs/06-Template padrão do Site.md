@@ -1,12 +1,29 @@
 # Template padrão do site
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+6 Template do Site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O padrão  de layout é correspondente ao projeto de interface, conforme exposto na figura abaixo:
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+
+![Figura 3 - Estrutura padrão do site](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Wireframes.png)
+	
+    Figura 10-  Estrutura padrão do site
+
+O modelo encontra se disponível no GitHub, no endereço:
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro, sendo composto por tela principal e tela de menu.
+
+
+Tela Principal
+
+
+Figura 11- Tela Principal
+
+Tela que exibe a visualização inicial do site, indicando o cronômetro e o menu.
+
+
+Tela de Menu
+
+
+Figura 11- Tela de Menu
+
+A tela que exibe o menu, permitindo ao usuário ter informações e alterar configurações do site.
