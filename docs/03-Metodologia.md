@@ -1,77 +1,61 @@
-
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A  metodologia  contempla  as  definições  de  ferramental  utilizado  pela  equipe  tanto  para  a
+manutenção dos códigos e demais artefatos quanto para a organização do time na execução
+das tarefas do projeto.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+## Relação de Ambientes de Trabalho
 
-## Controle de Versão
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos
+ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+## Gestão de código fonte
 
-O projeto segue a seguinte convenção para o nome de branches:
+Para  gestão  do  código  fonte  do  software  desenvolvido  pela  equipe,  o  grupo  utiliza  um
+processo  baseado  no  Git  Flow, em que as manutenções no código são feitas em branches separados do branch principal Master. Sendo identificados como Release, Develop e Feature. 
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+![Figura 1 - Fluxo de controle do código fonte no repositório git](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/GitFlow.png)
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+Figura 1 - Fluxo de controle do código fonte no repositório git
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+O código fonte ficará hospedado no Github, onde estará disponível o histórico de edições e releases do projeto. Isso oferece um melhor controle e transparência sobre o processo de desenvolvimento.
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+## Gerenciamento do Projeto
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+A equipe usa metodologias ágeis, utilizando o Scrum como base para a definição do processo de desenvolvimento.A equipe está organizada da seguinte maneira:
 
-## Gerenciamento de Projeto
+- **Scrum Master:**  Ruyller Ferreira
+- **Product Owner:** Michelle Aline
+- **Equipe de Desenvolvimento:** 
+    - Mariane Serapião
+    - Luiz Vitor
+    - Vitor Martins
+ - **Design:** Allana Tavares
 
-### Divisão de Papéis
+Para a organização do projeto, será utilizado o GitHub conforme lista abaixo:
 
-Apresente a divisão de papéis entre os membros do grupo.
+- **Backlog:**  representa as tarefas trabalhadas baseadas no objetivo do cliente, sob a ótica do  Product Backlog, fazendo com que a equipe se torne mais auto-organizável e eficiente.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- **To Do:** deverá constar o trabalho em andamento, para que haja possibilidade de aprimoração de uma determinada parte.
 
-### Processo
+- **In progress:** irá demonstrar as tarefas já iniciadas.
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+- **Test:** checagem de qualidade. A medida que as tarefas são concluídas, são movidas para a checagem de qualidade, e analisadas semanalmente para verificar e garantir o bom funcionamento do software.
 
-### Ferramentas
+- **Done:** nesta lista são colocadas as tarefas aprovadas nos testes de qualidades e prontas para aproveitamento do usuário, ou seja, software pronto para uso.
 
-As ferramentas empregadas no projeto são:
+- **Locked:** quando ocorre algo que impeça a fluidez da tarefa, a mesma será migrada para cá com um comentário sobre o motivo do impedimento.
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+A inserção das tarefas será feita por issues no Github, que devem ser adicionados ao Projeto. Novas tarefas adicionadas são movidas automaticamente para o Backlog. Ressalta-se a importância de comentários sucintos que expliquem a demanda de modo a garantir uma boa comunicação no gerenciamento de projetos e da adição de milestones para conferir o andamento das tarefas. O quadro de kanban está disponível no link https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/projects/2 , dentro do repositório da equipe a fim de facilitar o acesso a informações importantes para o grupo.
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+
+![Figura 2 - Quadro kanban no GitHub](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Kanban%201.png)
+
+Figura 2 - Quadro kanban no GitHub
+
+Estão sendo utilizadas etiquetas coloridas sugeridas pelo modelo kanban da plataforma, bem como algumas adicionais definidas pelo grupo:
+
+![Figura 3 - Etiquetas do quadro kanban](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Kanban%202.png)
+
+Figura 3 - Etiquetas do quadro kanban
