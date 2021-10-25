@@ -5,7 +5,7 @@ A determinação exata do problema, suas personas, requisitos funcionais e não-
 ## Personas
 
 | Izabela Correa | Evaristo Antônio | Marcel |
-| :---        |    :----:   |          ---: |
+| ---        |    ----   |          --- |
 | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Izabela%20Correa.png" alt="Izabela Correa" width="100" height="100"/>     | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Evaristo%20Ant%C3%B4nio.png" alt="Evaristo Antônio" width="100" height="100"/>       | <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Marcel.png" alt="Marcel" width="100" height="100"/> |
 | Idade: 24 anos <br>Ocupação: Universitária e Analista de Projeto| Idade: 34 anos <br>Ocupação: Arquiteto freelancer        | Idade: 18 anos <br>Ocupação: Estudante de Ensino Médio |
 | Hobbies, História:<br><ul><li>Assistir séries</li><li>Lutar Jiu-Jitsu</li></ul> | Hobbies, História:<br><ul><li>Ler livros</li><li>Jogar xadrez</li></ul>  | Hobbies, História:<br><ul><li>Tocar violão</li><li>Jogar Video game</li></ul> |
@@ -72,6 +72,39 @@ O escopo funcional do projeto abrange duas principais partes: requisitos funcion
 
 ### Requisitos funcionais
 
+| ID  | Descrição | Prioridade |
+| ------------- | ------------- | ------------- |
+| RF-01 | O site deve apresentar na página principal um cronômetro que pode ser pausado e que emite sons. | Alta |
+| RF-02 | O cronômetro vem ajustado para 25 minutos de atividade e 5 de pausa.  | Média |
+| RF-03 | O site muda de cor: vermelho alaranjado em atividade e azul claro em pausa. | Alta |
+| RF-04 | O cronômetro pode ser desativado para mostrar apenas em qual ciclo o usuário se encontra no momento. | Média |
+| RF-05 | A paleta de cores do site pode ser alterada em modo diurno e modo noturno. | Média |
+| RF-06 | O site possibilita a inserção de tabelas com grades de estudos com horários de estudo. | Baixa |
+| RF-07 | O site possui 4 presets de rotina diária: rotina de estudos de estudantes de ensino fundamental e médio (tempo mais fragmentado), estudantes universitários (tempo menos fragmentado) e jornadas de trabalho de 6 e de 8 horas. | Baixa |
+| RF-08 | A página principal possibilita abrir uma janela de lista to-do. | Média |
+| RF-09 | É possível visualizar o tempo de estudos em uma barra de progresso. | Média |
+| RF-10 | Os elementos da lista to-do são riscados quando concluídos. | Baixa |
+| RF-11 | Os elementos da lista to-do podem ser associados ao cronômetro de tempo, garantindo a troca de atividades. | Baixa |
+| RF-12 | A paleta de cores do site muda automaticamente de acordo com o horário do computador local. | Baixa |
+| RF-13 | O som do cronômetro pode ser alterado pelo usuário em um menu de configurações. | Média |
+| RF-14 | A página principal direciona para outra guia com recursos (vídeos, artigos e livros) sobre como utilizar melhor o tempo. | Média |
+| RF-15 | A página principal direciona para outra guia com recursos (vídeos, artigos e livros) sobre a ciência por trás dos estudos e da memória. | Média |
+| RF-16 | O site possibilita o compartilhamento de uma mesma sessão de estudos com amigos por meio do envio de um link. | Baixa |
+
 ### Requisitos não-funcionais
 
+| ID  | Descrição | Prioridade |
+| ------------- | ------------- | ------------- |
+| RNF-01 | O site deve ser publicado em algum repositório público acessível na internet. | Alta |
+| RNF-02 | Uso de design responsivo nas interfaces gráficas.  | Alta |
+| RNF-03 | O cronômetro terá uma função de ficar em modo anônimo na tela. | Baixa |
+| RNF-04 | Será possível o ajuste de tempo de estudos conforme a necessidade do usuário. | Média |
+| RNF-05 | O site deverá cadastrar as atividades referentes a cada matéria que o usuário necessite. | Média |
+| RNF-06 | Opção de marcar os tópicos de atividades que foram concluídos com checkbox. | Baixa |
+
 ## Restrições
+
+| ID  | Descrição |
+| ------------- | ------------- |
+| RE-01 | O projeto necessita ser entregue até o início de dezembro. |
+| RE-02 | O projeto deve ser implementado com uso de tecnologias web e Front End.  |
