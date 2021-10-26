@@ -1,25 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 *{
-  margin: 0 auto;
+  margin: 10 auto;
   padding: 0;
 }
 
 body{
-  background-color: #EE3629;
-  font-family: Arial, Helvetica, sans-serif;
+position: relative;
+background: rgba(239, 72, 61, 0.9);
+background: linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%);
+background: -webkit-linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%);
+background: -moz-linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%);
+font-family: Montserrat;
 }
 
-.titulo{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h2{
+ font-family: Righteous;
+ letter-spacing: 2px;
+ margin-top: 30px;
+ margin-bottom: 5px;
  text-align: center;
- color: white;
- font-size: 50px;
+ color: rgb(225, 232, 255);
+ font-size: 40px;
+ text-shadow: 0px 4px 4px #420716;
 }
 
 p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-family: Montserrat;
  text-align: center;
- color: white;
- font-size: 20px;
+ color: black;
+ font-size: 18px;
 }
 
 
@@ -40,7 +52,7 @@ p{
 }
 
 h1 {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
   }
 
@@ -48,7 +60,7 @@ button {
   padding: 10px;
   border: none;
   outline: none;
-  font-family: 'Segoe UI';
+  font-family: Montserrat;
   font-size: 1.1em;
   transition: all .5s;
   cursor: pointer;
@@ -140,10 +152,11 @@ label{
 /*FOOTER INICIO*/
 #footer {
   position: fixed;
-  padding: 10px 10px 0px 10px;
+  font-size: smaller;
+  padding: 12px 12px 5px 12px;
   bottom: 0;
   width: 100%;
-  height: 40px;
-  background: rgb(221, 15, 15);
+  height: 30px;
+
 }
 /*FOOTER LATERAL FIM*/
