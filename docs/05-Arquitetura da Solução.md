@@ -6,6 +6,10 @@ Este tópico mostra os detalhes técnicos da solução criada pela equipe, abran
 
 Abaixo, seguem os componentes que fazem parte da solução.
 
+![Figura 9 – Arquitetura de Solução](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Arquitetura%20de%20Solu%C3%A7%C3%A3o.png)
+
+Figura 9 – Arquitetura de Solução
+
 A solução implementada conta com os seguintes módulos:
 
   - **Navegador -** Interface básica do sistema

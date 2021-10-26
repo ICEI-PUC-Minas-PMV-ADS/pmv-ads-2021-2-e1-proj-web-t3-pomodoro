@@ -9,6 +9,34 @@ das tarefas do projeto.
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos
 ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
+<table>
+  <tr>
+    <th>Ambiente</th>
+    <th>Plataforma</th>
+    <th>Link de Acesso</th>
+  </tr>
+  <tr>
+    <td>Repositório de código fonte</td>
+    <td>GitHub</td>
+    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro">Abrir código fonte</a></td>
+  </tr>
+  <tr>
+    <td>Documentos do projeto</td>
+    <td>Google Drive</td>
+    <td><a href="https://docs.google.com/document/d/1kGArb5OuOSwr2KbFBQwl4r8V7Ls0WWAWEcXr1FOCDzc/edit">Abrir documentos do projeto</a></td>
+  </tr>
+  <tr>
+    <td>Projeto de Interface e Wireframes</td>
+    <td>Figma</td>
+    <td><a href="https://www.figma.com/proto/ueX7iHkqiiesJauC4wCxUd/Low-fidelity-Copy?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2">Abrir projeto de interface e wireframes</a></td>
+  </tr>
+  <tr>
+    <td>Gerenciamento do Projeto</td>
+    <td>GitHub</td>
+    <td><a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/projects">Abrir gerenciamento do projeto</a></td>
+  </tr>
+</table>
+
 ## Gestão de código fonte
 
 Para  gestão  do  código  fonte  do  software  desenvolvido  pela  equipe,  o  grupo  utiliza  um

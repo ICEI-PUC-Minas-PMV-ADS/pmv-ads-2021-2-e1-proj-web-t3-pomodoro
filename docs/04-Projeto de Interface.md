@@ -47,7 +47,21 @@ Figura 6 - Menu de configurações
  - Modo: alterações da paleta de cores do site e das configurações de som - modos pré-definidos
  - Compartilhamento com amigos: possibilita a geração de um link de compartilhamento da sessão de estudos
   
+![Figura 7 - Informações adicionais](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Info%20adicionais.png)
+
+Figura 7 - Informações adicionais
+
 Apresenta recursos de vídeos e artigos divididos em colunas de acordo com seu tema: melhor uso do tempo (direita) e  a ciência por trás dos estudos e da memória (esquerda).
+
+Tela - Lista to-do aberta
+
+![Figura 8 - Lista to-do aberta](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Lista%20todo%20aberta%201.png)
+
+Figura 8 - Lista to-do aberta
+
+![Figura 8 - Lista to-do aberta modo zen](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e1-proj-web-t3-pomodoro/main/docs/img/doc/Lista%20todo%20aberta%202.png)
+
+Figura 8 - Lista to-do aberta modo zen
 
 Apresenta as seguintes configurações: 
 
