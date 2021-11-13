@@ -56,3 +56,11 @@ function timer() {
   var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
   document.getElementById('counter').innerText = format
 }
+
+function mudarTema() {
+  var toggleEhNoturno = document.getElementById('switchTema').checked;
+  if (toggleEhNoturno)
+    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(139, 54, 41, 0.9) 0%, rgba(139, 72, 61, 0.9) 0.01%, rgba(139, 72, 61, 0.9) 69.88%, rgba(139, 107, 61, 0.9) 100%)";
+  else
+    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%)";
+}
