@@ -7,13 +7,14 @@ var tempo = 1000; //Quantos milesimos tem 1 segundo.
 var cron;
 
 function start() {
-
-  cron = setInterval(() => { timer(); }, tempo);
+  if(cron == undefined)
+    cron = setInterval(() => { timer(); }, tempo);
 }
 
 function pause() {
 
   clearInterval(cron);//o clearInterval serve para parar a função dentro do ().
+  cron = undefined;
 }
 
 function stop() {
@@ -22,6 +23,7 @@ function stop() {
   hh = 0;
   mm = 0;
   ss = 0;
+  cron = undefined;
 
   document.getElementById('counter').innerText = '00:00:00'
 }
