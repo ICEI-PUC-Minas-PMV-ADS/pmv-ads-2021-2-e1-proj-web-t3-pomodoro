@@ -59,8 +59,13 @@ function timer() {
 
 function mudarTema() {
   var toggleEhNoturno = document.getElementById('switchTema').checked;
-  if (toggleEhNoturno)
+  debugger
+  if (toggleEhNoturno) {
     document.body.style.background = "-webkit-linear-gradient(0deg, rgba(139, 54, 41, 0.9) 0%, rgba(139, 72, 61, 0.9) 0.01%, rgba(139, 72, 61, 0.9) 69.88%, rgba(139, 107, 61, 0.9) 100%)";
-  else
+    document.getElementById("cronometro").style.background="rgb(138, 139, 139)"
+  }
+  else {
     document.body.style.background = "-webkit-linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%)";
+    document.getElementById("cronometro").style.background="rgb(238, 139, 139)"
+  }
 }
