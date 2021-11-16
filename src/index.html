@@ -30,6 +30,16 @@
     </div>
   </div>
 
+
+  <!--MODO ZEN-->
+  <div class="zen" onclick="modoZen()">
+   <label class="descricao" for="modoZen"><i class="bi bi-hourglass-split"></i></i></label>
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="modoZen">
+      <label class="custom-control-label descricao" for="modoZen"><i class="bi bi-dash-square-dotted"></i></label>
+    </div>
+  </div>
+
   <!--MENU LATERAL INICIO-->
   <input type="checkbox" id="check">
   <label for="check"><img src="/img/barra-de-menu.png" alt="menu" class="menu"></label>
@@ -45,12 +55,14 @@
 
 
   <!--CRONOMETRO INICIO-->
-  <div class="max-width" id="cronometro">
-    <h1 id="counter">00:00:00</h1><br>
-    <input class="form-check-input" type="checkbox" />
-    <button class="start" onclick="start();">Iniciar</button>
-    <button class="pause" onclick="pause();">Pausar</button>
-    <button class="stop" onclick="stop();">Parar</button><br>
+  <div class="max-width">
+    <h1 id="tempo" class="tempo_restante"> 25:00</h1><br>
+      <input class="form-check-input" type="checkbox" />
+      <button class="start" onclick="start();">Iniciar</button>
+      <button class="pause" onclick="pause();">Pausa </button>
+      <button class="stop" onclick="stop();">Parar</button><br>
+
+      <audio id="avisando" src="https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg"></audio>
   </div>
   <!--CRONOMETRO FIM-->
   

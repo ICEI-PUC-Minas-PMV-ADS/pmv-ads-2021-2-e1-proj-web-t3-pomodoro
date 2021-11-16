@@ -44,18 +44,18 @@ p{
   padding: 10px;
   box-sizing: border-box;
   margin-top: 10%;
-  background-color: #FFF;
-  box-shadow: 0 0 5px #FFF;
+  background-color: rgba(255, 255, 255, 0.295);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
   text-align: center;
   font-weight: bold;
   border-radius: 1;
 }
 
-h1 {
-  font-family: 'Orbitron', sans-serif;
+time {
+  font-family: Orbitron;
   margin-top: 20px;
   }
-
+  
 button {
   padding: 10px;
   border: none;
@@ -77,7 +77,7 @@ background-color: blanchedalmond;
 }
 
 .pause{
-  background-color: rgb(201, 201, 47);
+  background-color: rgb(70, 147, 235);
 }
 
 .stop{
@@ -164,6 +164,22 @@ label{
 .tema {
   position: fixed;
   top: 12px;
+  right: 10px;
+  display: flex;
+
+}
+.descricao {
+  position: relative;
+  padding: 0;
+  margin: 4px;
+  font-size: 22px;
+}
+
+
+/*MODO ZEN*/
+.zen {
+  position: fixed;
+  top: 50px;
   right: 10px;
   display: flex;
 

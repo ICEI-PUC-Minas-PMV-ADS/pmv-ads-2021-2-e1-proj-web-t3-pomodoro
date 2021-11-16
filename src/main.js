@@ -52,19 +52,24 @@ function timer() {
   }
 
 
-
+  
   var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
   document.getElementById('counter').innerText = format
 }
 
 function mudarTema() {
   var toggleEhNoturno = document.getElementById('switchTema').checked;
-  if (toggleEhNoturno) {
-    document.getElementById("cronometro").style.background="rgb(138, 139, 139)"
+  if (toggleEhNoturno)
     document.body.style.background = "-webkit-linear-gradient(0deg, rgba(62,4,97,1) 0%, rgba(125,27,112,1) 81%, rgba(184,49,126,1) 100%)";
-  }
-  else {
+  else
     document.body.style.background = "-webkit-linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%)";
-    document.getElementById("cronometro").style.background="rgb(238, 139, 139)"
-  }
+}
+
+
+function modoZen() {
+  var modoZenOn = document.getElementById('modoZen').checked;
+  if (modoZenOn)
+    document.getElementById('tempo').style.visibility = "hidden";
+  else
+    document.getElementById('tempo').style.visibility = "visible";
 }
