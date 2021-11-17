@@ -69,7 +69,7 @@ function mudarTema() {
 function modoZen() {
   var modoZenOn = document.getElementById('modoZen').checked;
   if (modoZenOn)
-    document.getElementById('tempo').style.visibility = "hidden";
+    document.getElementById('counter').style.visibility = "hidden";
   else
-    document.getElementById('tempo').style.visibility = "visible";
+    document.getElementById('counter').style.visibility = "visible";
 }
