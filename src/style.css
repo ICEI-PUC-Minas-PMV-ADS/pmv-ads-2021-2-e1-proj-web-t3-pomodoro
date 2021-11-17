@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@674&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 *{
   margin: 10 auto;
@@ -48,11 +48,12 @@ p{
   box-shadow: 0 0 5px rgb(255, 255, 255);
   text-align: center;
   font-weight: bold;
+  font-family: 'Concert One';
   border-radius: 1;
 }
 
 time {
-  font-family: Orbitron;
+  font-family: Concert One;
   margin-top: 20px;
   }
   
