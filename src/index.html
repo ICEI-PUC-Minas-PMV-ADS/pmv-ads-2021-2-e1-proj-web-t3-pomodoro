@@ -90,7 +90,16 @@
   <!--LISTA TO-DO FIM-->
 
   <!--CRONOMETRO INICIO-->
+ 
   <div class="max-width">
+    <button> <label for="toggle-1">
+      <img src="img/ocultar.png" alt="">
+    </label></button>
+    
+  <input type="checkbox" id="toggle-1">
+  
+  <div id="mostra">
+
     <h1 id="counter">00:00:00</h1><br>
     <input class="form-check-input" type="checkbox" />
     <button class="start" onclick="start();"><img src="img/play.png" alt="play"></button>
@@ -98,6 +107,7 @@
     <button class="stop" onclick="stop();"><img src="img/stop.png" alt="stop"></button><br>
 
     <audio id="avisando" src="https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg"></audio>
+  </div>
   </div>
   <!--CRONOMETRO FIM-->
 
