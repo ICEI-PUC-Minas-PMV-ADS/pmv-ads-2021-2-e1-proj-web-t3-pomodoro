@@ -353,8 +353,6 @@ body {
   margin: 30px;
   right: 0px;
  
-  
-  
 
    
 
@@ -364,7 +362,11 @@ body {
     
   height: 100%;
   background: #f289a5;
+  animation: progress-animation 5s infinite;
   
   
     
 }
+@keyframes progress-animation{
+  0% { width: 0%; } 
+  100% { width: 100% }
