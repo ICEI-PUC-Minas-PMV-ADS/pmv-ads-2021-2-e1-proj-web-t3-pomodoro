@@ -7,7 +7,7 @@ var tempo = 1000; //Quantos milesimos tem 1 segundo.
 var cron;
 
 function start() {
-  if(cron == undefined)
+  if (cron == undefined)
     cron = setInterval(() => { timer(); }, tempo);
 }
 
@@ -52,7 +52,7 @@ function timer() {
   }
 
 
-  
+
   var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
   document.getElementById('counter').innerText = format
 }
@@ -75,12 +75,10 @@ function modoZen() {
 }
 
 //Janela de compartilhamento
-function abreJanela()
-     {    
-          janela=window.open("share.html","_blank", "width=450, height=180, top=15cm, left=15cm, menubar=0, fullscreen=0, titlebar=0, status=0, top=300px, left= 550px, align-items: center");
-            }
-  
-    function fechaJanela() 
-    {   
-          janela.close();    
-          } 
+function abreJanela() {
+  janela = window.open("share.html", "_blank", "width=450, height=180, top=15cm, left=15cm, menubar=0, fullscreen=0, titlebar=0, status=0, top=300px, left= 550px, align-items: center");
+}
+
+function fechaJanela() {
+  janela.close();
+}
