@@ -7,14 +7,17 @@ var tempo = 1000; //Quantos milesimos tem 1 segundo.
 var cron;
 
 function start() {
-  if (cron == undefined)
+  if (cron == undefined) {
     cron = setInterval(() => { timer(); }, tempo);
+    alterarCorExecucao(false);
+  }
 }
 
 function pause() {
 
   clearInterval(cron);//o clearInterval serve para parar a função dentro do ().
   cron = undefined;
+  alterarCorExecucao(true);
 }
 
 function stop() {
@@ -25,7 +28,8 @@ function stop() {
   ss = 0;
   cron = undefined;
 
-  document.getElementById('counter').innerText = '00:00:00'
+  document.getElementById('counter').innerText = '00:00:00';
+  alterarCorExecucao(false);
 }
 
 function timer() {
@@ -48,7 +52,7 @@ function timer() {
     mm = 0;
     ss = 0;
 
-    document.getElementById('counter').innerText = '00:00:00'
+    document.getElementById('counter').innerText = '00:00:00';
   }
 
 
@@ -59,10 +63,35 @@ function timer() {
 
 function mudarTema() {
   var toggleEhNoturno = document.getElementById('switchTema').checked;
-  if (toggleEhNoturno)
-    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(62,4,97,1) 0%, rgba(125,27,112,1) 81%, rgba(184,49,126,1) 100%)";
-  else
+  if (toggleEhNoturno) {
+    document.getElementById("cronometro").style.background="rgb(138, 139, 139)"
+    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(35, 51, 41,1) 0%, rgba(54, 117, 62,1) 81%, rgba(54, 117, 62,1) 100%)";
+  }
+  else {
     document.body.style.background = "-webkit-linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%)";
+    document.getElementById("cronometro").style.background="rgb(238, 139, 139)"
+  }
+}
+
+function alterarCorExecucao(pausado) {
+  var toggleEhNoturno = document.getElementById('switchTema').checked;
+
+  if (toggleEhNoturno && !pausado) {
+    document.getElementById("cronometro").style.background="rgb(138, 139, 139)"
+    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(35, 51, 41,1) 0%, rgba(54, 117, 62,1) 81%, rgba(54, 117, 62,1) 100%)";
+  }
+  else if (toggleEhNoturno && pausado) {
+    document.getElementById("cronometro").style.background="rgb(138, 139, 139)"
+    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(45, 44, 74,1) 0%, rgba(53, 53, 115,1) 81%, rgba(53, 53, 115,1) 100%)";
+  }
+  else if (!toggleEhNoturno && !pausado) {
+    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(238, 54, 41, 0.9) 0%, rgba(239, 72, 61, 0.9) 0.01%, rgba(239, 72, 61, 0.9) 69.88%, rgba(255, 107, 61, 0.9) 100%)";
+    document.getElementById("cronometro").style.background="rgb(238, 139, 139)"
+  }
+  else if (!toggleEhNoturno && pausado) {
+    document.getElementById("cronometro").style.background="rgb(147, 201, 201)"
+    document.body.style.background = "-webkit-linear-gradient(0deg, rgba(61,105,255,1) 0%, rgba(50, 88, 217,1) 81%, rgba(50, 88, 217,1) 100%)";
+  }
 }
 
 
