@@ -55,6 +55,7 @@ p{
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 800px;
+  
 }
 
 
@@ -335,3 +336,35 @@ img{
   width: 30px;
 }
 
+/* BARRA DE Progresso*/
+
+
+body {
+  box-sizing: border-box;
+  justify-content: center;
+  
+}
+.progress {
+  width: 90%;
+  height: 15px;
+  background: white;
+  border-radius: 0px;
+  width: 240px;
+  margin: 30px;
+  right: 0px;
+ 
+  
+  
+
+   
+
+}
+
+.progress-bar {
+    
+  height: 100%;
+  background: #f289a5;
+  
+  
+    
+}
