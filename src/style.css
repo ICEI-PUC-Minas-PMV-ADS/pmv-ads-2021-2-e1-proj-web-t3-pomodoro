@@ -28,6 +28,14 @@ h2{
  text-shadow: 0px 4px 4px #420716;
 }
 
+h3{
+  font-size: 150%;
+  color: #ffffff;
+  font-weight: 800px;
+  text-shadow: 0px 4px 4px #420716;
+  font-family: Montserrat;
+}
+
 p{
  font-family: Montserrat;
  text-align: center;
@@ -46,7 +54,7 @@ p{
 
 /*LISTA TO-DO INICIO*/
 #lista {
-  top: 400px;
+  top: 300px;
   right: 10px;
   display: flex;
   position:fixed;
@@ -57,15 +65,6 @@ p{
   font-weight: bold;
 }
 
-#lista h1 {
-  font-size: 180%;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 800px;
-  
-}
-
-
 
 .dados{
   margin: 0 auto;
@@ -75,7 +74,7 @@ p{
 
 #enter {
   border: none;
-  padding: 5px 15px;
+  padding: 5px 12px;
   border-radius: 5px;
   color: #f289a5;
   background-color: #2bd266;
@@ -110,10 +109,10 @@ li {
   color: #ffffff;
   text-transform: capitalize;
   font-weight: 600;
-  border: 2px solid #025f70;
+  border: none;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #f289a5;
+  background: #da976ad5;
   transition: all 0.75s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -122,7 +121,7 @@ li {
 }
 
 li:hover {
-  background: #f289a5;
+  background: #da976ad5;
 }
 
 li > button {
@@ -130,7 +129,7 @@ li > button {
   background: none;
   border: none;
   float: right !important;
-  color: #025f70;
+  color: #1d1e1f;
   font-weight: 800;
 }
 
@@ -176,6 +175,7 @@ input {
 time {
   font-family: Concert One;
   margin-top: 20px;
+  text-align: center;
   }
   
 button {
@@ -233,12 +233,13 @@ input[type="checkbox"]
 
 nav{
   background-color: rgba(43, 21, 21, 0.282);
-  width: 350px;
+  width: 325px;
   left: -350px;
-  height: 100%;
+  height: 250%;
   padding: 20px;
   position: absolute;
   transition: all .5s;
+  border-radius: 10px;
 }
 
 input[type="checkbox"]:checked ~ nav{
@@ -249,18 +250,20 @@ transform: translateX(350px); /*faz o menu aparecer*/
 ul{
   top: 10%;
   position: absolute;
-  width: 100%;
+  width: 250px;
 }
 
 a{
   color: white;
   display: block;
-  padding: 10px 5px;
+  padding: 15px 10px;
 }
 
 a:hover{
   background-color: rgb(230, 217, 176); /*Cor quando o mouse é posicionado no menu*/
   color: black;
+  border-radius: 15px;
+  width: 200px;
 }
 
 label{
@@ -287,8 +290,8 @@ label{
 /*TEMA*/
 .tema {
   position: fixed;
-  top: 12px;
-  right: 10px;
+  top: 40px;
+  right: 15px;
   display: flex;
 
 }
@@ -306,8 +309,8 @@ label{
 /*MODO ZEN*/
 .zen {
   position: fixed;
-  top: 50px;
-  right: 10px;
+  top: 70px;
+  right: 15px;
   display: flex;
 
 }
@@ -319,6 +322,8 @@ label{
 }
 
 /*OCULTAR CRONOMETRO*/
+
+
 /* Checkbox */
 #toggle-1 {
   display:none;
