@@ -154,8 +154,6 @@ input {
   display: none;
 }
 
-
-
 /*LISTA TO-DO FIM*/
 
 
@@ -234,10 +232,11 @@ input[type="checkbox"]
 }
 
 nav{
-  background-color: rgba(16, 16, 17, 0.282);
+  background-color: rgba(43, 21, 21, 0.282);
   width: 350px;
   left: -350px;
   height: 100%;
+  padding: 20px;
   position: absolute;
   transition: all .5s;
 }
@@ -256,11 +255,11 @@ ul{
 a{
   color: white;
   display: block;
-  padding: 20px 5px;
+  padding: 10px 5px;
 }
 
 a:hover{
-  background-color: rgb(176,224,230); /*Cor quando o mouse é posicionado no menu*/
+  background-color: rgb(230, 217, 176); /*Cor quando o mouse é posicionado no menu*/
   color: black;
 }
 
@@ -269,6 +268,7 @@ label{
   padding: 15px;
   position: absolute; /*alinha o icone do menu*/
   z-index: 1; /*faz o menu sumir*/
+  
 }
 
 /*MENU LATERAL FIM*/
