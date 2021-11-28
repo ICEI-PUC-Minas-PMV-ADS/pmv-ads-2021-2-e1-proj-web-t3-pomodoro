@@ -82,3 +82,6 @@ function abreJanela() {
 function fechaJanela() {
   janela.close();
 }
+
+// BARRA DE PROGRESSO ***
+
