@@ -46,7 +46,7 @@ function timer() {
       hh++;
     }
   }
-  if (mm >= 1) {
+  if (mm >= 2) {
     alert('Tempo de descanso')
     clearInterval(cron);
     hh = 0;
@@ -55,6 +55,7 @@ function timer() {
 
     document.getElementById('counter').innerText = '00:00:00';
 
+
   }
 
   var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
@@ -62,6 +63,7 @@ function timer() {
 
 
 }
+
 
 /*CRONOMETRO FIM */
 
@@ -217,3 +219,6 @@ function btn1Count(event) {
 }
 
 /*BARRA DE PROGRESSO FIM*/
+
+/*CONFIGURAÇÕES DE TEMPO INICIO*/
+

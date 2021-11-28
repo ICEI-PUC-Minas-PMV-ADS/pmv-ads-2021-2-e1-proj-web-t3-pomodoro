@@ -46,10 +46,9 @@ p{
 
 /*LISTA TO-DO INICIO*/
 #lista {
-  top: 60px;
-  right: 0;
-  display: flex;
-  position:fixed;
+  right: 20px;
+  height: 100%;
+  position: absolute;
   transition: all .5s;
   
 }
