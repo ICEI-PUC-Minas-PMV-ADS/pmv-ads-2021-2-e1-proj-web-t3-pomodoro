@@ -55,9 +55,7 @@ function timer() {
 
     document.getElementById('counter').innerText = '00:00:00';
 
-
   }
-
 
   var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
   document.getElementById('counter').innerText = format
