@@ -197,3 +197,23 @@ function carregar() {
 
 
 /*MUDAR COR DO SITE DE ACORDO COM O HORARIO INICIO*/
+
+
+/*BARRA DE PROGRESSO INICIO*/
+var btn1 = document.getElementById("button1");
+var counters = document.querySelectorAll(".counter");
+let root = document.documentElement;
+var size = 36.42;
+
+btn1.addEventListener("click", btn1Count);
+
+function btn1Count(event) {
+  let atual = parseInt(counters[0].innerHTML);
+
+  if (atual == 7) return;
+
+  counters[0].innerHTML = atual + 1;
+  root.style.setProperty('--size', 255 + 36.42 - (size += 36.42));
+}
+
+/*BARRA DE PROGRESSO FIM*/

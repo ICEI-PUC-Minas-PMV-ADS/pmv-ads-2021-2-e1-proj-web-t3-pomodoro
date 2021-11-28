@@ -46,11 +46,12 @@ p{
 
 /*LISTA TO-DO INICIO*/
 #lista {
-  top: 400px;
-  right: 10px;
+  top: 60px;
+  right: 0;
   display: flex;
   position:fixed;
   transition: all .5s;
+  
 }
 .intro {
   margin: 30px 0px;
@@ -62,7 +63,7 @@ p{
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 800px;
-  
+  text-align: center;
 }
 
 
@@ -101,6 +102,7 @@ p{
 ul {
   text-align: left;
   margin-top: 20px;
+  
 }
 
 
@@ -113,12 +115,13 @@ li {
   border: 2px solid #025f70;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #f289a5;
+  background: #b1b1b1;
   transition: all 0.75s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5 ease;
+  align-items: center;
 }
 
 li:hover {
@@ -322,6 +325,9 @@ label{
 /* Checkbox */
 #toggle-1 {
   display:none;
+  flex-direction: row;
+justify-content: center;
+align-items: center;
 }
  
 label { 
@@ -349,32 +355,57 @@ img{
 /* BARRA DE Progresso*/
 
 
-body {
-  box-sizing: border-box;
+.graph {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  display: flex;
   justify-content: center;
-  
-}
-.progress {
-  width: 90%;
-  height: 15px;
-  background: white;
-  border-radius: 0px;
-  width: 240px;
-  margin: 30px;
-  right: 0px;
-
+  align-items: center;
 }
 
-.progress-bar {
+#button1{
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  transition: all .5s;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+
+svg {
   position: absolute;
-  height: 15px;
-  background: #f289a5;
-  animation: progress-animation 5s infinite;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  fill: transparent;
+  stroke-width: 12px;
+  stroke: #ddd;
+}
+
+:root {
+  --size: 255;
+}
+
+.graph svg.cor {
+  stroke: #f03869;
+  stroke-dasharray: 255;
+  stroke-dashoffset: calc(var(--size) - 36.42);
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
  
     
-}
-@keyframes progress-animation{
-  0% { width: 0%; } 
-  100% { width: 73%; }
-}
+
 
