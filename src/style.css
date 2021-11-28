@@ -43,34 +43,75 @@ p{
  font-size: 18px;
 }
 
+/*LISTA LATERAL INICIO*/
+* { box-sizing: border-box; }
 
-.listatarefas {
-  position: fixed;
-  top: 120px;
-  right: 10px;
-  display: flex;
-
+.listaicon{
+  position: relative;
 }
 
-/*LISTA TO-DO INICIO*/
-#lista {
-  top: 300px;
-  right: 10px;
-  display: flex;
-  position:fixed;
+input[type="lista"]{
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+nav{
+  background-color: rgba(43, 21, 21, 0.282);
+  width: 325px;
+  left: -300px;
+  height: 250%;
+  padding: 20px;
+  position: absolute;
   transition: all .5s;
+  border-radius: 10px;
 }
+
+input[type="lista"]:checked ~ nav{
+transform: translateX(350px); /*faz o menu aparecer*/
+}
+
+#lista {
+  display: none;
+  transition: all .5s;
+  position: relative;
+  float: left;
+}
+
+ul{
+  top: 100%;
+  left: 10px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Checkbox */
+#toggle-1 {
+  display:none;
+}
+ 
+/* CSS padrão da div */
+#mostra {
+  display:none;
+}
+ 
+/* CSS quando o checkbox está marcado */
+#toggle-1:checked ~ #mostra {
+  display:block;
+}
+
 .intro {
-  margin: 30px 0px;
+  margin: 10px 0px;
   font-weight: bold;
 }
-
 
 .dados{
   margin: 0 auto;
   width: 70%;
+  top: 15%;
+  width: 250px;
 }
-
 
 #enter {
   border: none;
@@ -84,7 +125,7 @@ p{
   -ms-transition: all 0.75s ease;
   -o-transition: all 0.75 ease;
   font-weight: normal;
-  display: inline-block;
+  
 }
 
 #enter:hover{
@@ -92,16 +133,10 @@ p{
   color: #FFCD5D;
 }
 
-  #enter img{
+#enter img{
       width: 25px;
       height: 25px;
   }
-
-ul {
-  text-align: left;
-  margin-top: 20px;
-}
-
 
 li {
   list-style: none;
@@ -118,6 +153,7 @@ li {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5 ease;
+  overflow: hidden;  
 }
 
 li:hover {
@@ -140,7 +176,7 @@ input {
   height: 35px;
   border: none;
   margin: 0px;
-  float: left;
+  top: 10%;
 }
 
 
@@ -152,7 +188,6 @@ input {
 .delete {
   display: none;
 }
-
 /*LISTA TO-DO FIM*/
 
 
@@ -228,7 +263,13 @@ img{
 input[type="checkbox"]
 {
   display: none;
-  
+}
+
+.check{
+  display: inline-block;
+  margin: 50px;
+  position: relative;
+  float: left;
 }
 
 nav{
@@ -243,14 +284,16 @@ nav{
 }
 
 input[type="checkbox"]:checked ~ nav{
-transform: translateX(350px); /*faz o menu aparecer*/
+  transform: translateX(350px); /*faz o menu aparecer*/
 }
 
 
 ul{
   top: 10%;
-  position: absolute;
+  left: 20px;
   width: 250px;
+  position: absolute;
+  overflow:hidden;
 }
 
 a{
@@ -267,12 +310,24 @@ a:hover{
 }
 
 label{
-  
-  padding: 15px;
-  position: absolute; /*alinha o icone do menu*/
-  z-index: 1; /*faz o menu sumir*/
-  
+  padding: 10px;
+  display: inline-block;
+  position: relative;
 }
+
+label.check{
+  z-index: 1; /*faz o menu sumir*/
+  position: relative;
+
+}
+
+label.listaicon{
+  z-index: 2; /*faz o menu sumir*/
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+}
+
 
 /*MENU LATERAL FIM*/
 
@@ -324,28 +379,7 @@ label{
 /*OCULTAR CRONOMETRO*/
 
 
-/* Checkbox */
-#toggle-1 {
-  display:none;
-}
- 
-label { 
- -webkit-appearance: push-button;
- -moz-appearance: button; 
- display: inline-block;
- cursor: pointer;
- padding: 5px;
-}
- 
-/* CSS padrão da div */
-#mostra {
-  display:none;
-}
- 
-/* CSS quando o checkbox está marcado */
-#toggle-1:checked ~ #mostra {
-  display:block;
-}
+
  
 img{
   width: 30px;
