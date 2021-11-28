@@ -56,51 +56,53 @@
   <!--MENU LATERAL FIM-->
 
   <!--LISTA TO-DO INICIO-->
-  <aside id="lista">
+  <div>
+    <aside id="lista">
 
-    <div class="container">
-      <div class="row">
-        <div class="intro col-12">
-          <h1>Lista de Tarefas</h1>
-          <div>
-            <div class="border1"></div>
+      <div class="container">
+        <div class="row">
+          <div class="intro col-12">
+            <h1>Lista de Tarefas</h1>
+            <div>
+              <div class="border1"></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="progress">
-        <span class="progress-bar" style="width: 18%"></span>
-         
-      </div>
-     
+        <div class="progress">
+          <span class="progress-bar" style="width: 18%"></span>
 
-      <div class="row" style="width: 100%">
-        <div class="dados col-6">
-          <input id="userInput" type="text" placeholder="Nova Tarefa..." maxlength="27">
-          <button id="enter"><i class=""><img src="img/adicionar.png"></i></button>
         </div>
-      </div>
 
-      <!-- Empty List -->
-      <div class="row">
-        <div class="listItems col-12">
-          <ul class="col-12 offset-0 col-sm-8 offset-sm-2" id="ul">
-          </ul>
+
+        <div class="row" style="width: 100%">
+          <div class="dados col-6">
+            <input id="userInput" type="text" placeholder="Nova Tarefa..." maxlength="27">
+            <button id="enter"><i class=""><img src="img/adicionar.png"></i></button>
+          </div>
         </div>
-      </div>
 
-    </div>
-  </aside>
+        <!-- Empty List -->
+        <div class="row">
+          <div class="listItems col-12">
+            <ul class="col-12 offset-0 col-sm-8 offset-sm-2" id="ul">
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+  </div>
   <!--LISTA TO-DO FIM-->
 
   <!--CRONOMETRO INICIO-->
 
   <div class="max-width" id="cronometro">
-    <button> <label for="toggle-1">
-        <img src="img/ocultar.png" alt="">
-      </label></button>
 
     <input type="checkbox" id="toggle-1">
+    <label for="toggle-1">
+      <img src="img/ocultar.png" alt="ocultar">
+    </label><br>
 
     <div id="mostra">
 
