@@ -4,7 +4,7 @@ var hh = 0;
 var mm = 0;
 var ss = 0;
 
-var tempo = 10; //Quantos milesimos tem 1 segundo.
+var tempo = 100; //Quantos milesimos tem 1 segundo.
 var cron;
 
 function start() {
@@ -46,7 +46,7 @@ function timer() {
       hh++;
     }
   }
-  if (mm >= 2) {
+  if (mm >= 1) {
     alert('Tempo de descanso')
     clearInterval(cron);
     hh = 0;
