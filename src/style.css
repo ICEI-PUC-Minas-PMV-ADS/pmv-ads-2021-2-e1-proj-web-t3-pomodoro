@@ -58,11 +58,13 @@ p{
 }
 
 #lista h1 {
-  font-size: 180%;
+  font-size: 130%;
   color: #ffffff;
   text-transform: uppercase;
+  font-family: Montserrat;
   font-weight: 800px;
   text-align: center;
+  text-shadow: 0px 4px 4px #420716;
 }
 
 
@@ -70,6 +72,7 @@ p{
 .dados{
   margin: 0 auto;
   width: 70%;
+  top:15%;
 }
 
 
@@ -101,6 +104,10 @@ p{
 ul {
   text-align: left;
   margin-top: 20px;
+  top: 100%;
+  left: 10px;
+  width: 100%;
+  position: absolute;
   
 }
 
@@ -111,7 +118,7 @@ li {
   color: #ffffff;
   text-transform: capitalize;
   font-weight: 600;
-  border: 2px solid #025f70;
+  border: none;
   border-radius: 5px;
   margin-bottom: 10px;
   background: #b1b1b1;
@@ -124,7 +131,7 @@ li {
 }
 
 li:hover {
-  background: #f289a5;
+  background: #da976ad5;
 }
 
 li > button {
@@ -229,6 +236,12 @@ img{
   width: 40px; /*Tamanho do icone de menu*/
 }
 
+.check{
+  display: inline-block;
+  margin: 50px;
+  position: relative;
+}
+
 input[type="checkbox"]
 {
   display: none;
@@ -236,12 +249,14 @@ input[type="checkbox"]
 }
 
 nav{
-  background-color: rgba(16, 16, 17, 0.282);
-  width: 350px;
+  background-color: rgba(43, 21, 21, 0.282);
+  width: 325px;
   left: -350px;
-  height: 100%;
+  height: 250%;
   position: absolute;
+  padding:20px;
   transition: all .5s;
+  border-radius: 10px;
 }
 
 input[type="checkbox"]:checked ~ nav{
@@ -250,25 +265,29 @@ transform: translateX(350px); /*faz o menu aparecer*/
 
 
 ul{
-  top: 10%;
+  top: 5%;
+  left: 20px;
+  width: 250px;
   position: absolute;
-  width: 100%;
 }
 
 a{
   color: white;
   display: block;
-  padding: 20px 5px;
+  padding: 15px 10px;
 }
 
 a:hover{
-  background-color: rgb(176,224,230); /*Cor quando o mouse é posicionado no menu*/
+  background-color: rgb(230, 217, 176); /*Cor quando o mouse é posicionado no menu*/
   color: black;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 210px;
 }
 
 label{
   
-  padding: 15px;
+  padding: 10px;
   position: absolute; /*alinha o icone do menu*/
   z-index: 1; /*faz o menu sumir*/
 }
@@ -325,8 +344,8 @@ label{
 #toggle-1 {
   display:none;
   flex-direction: row;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
  
 label { 
