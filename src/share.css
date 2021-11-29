@@ -8,14 +8,14 @@
 }
 
 h1{
-	margin-top: 0px;
-	padding-top: -50px;
+	padding-top: 20px;
 	color: rgb(250, 250, 250);
 	position: flex;
 	float: center;
 	text-shadow: 0px 4px 4px #420716;
 	font-family: Montserrat;
 }
+
 
 .btn-primary { background-color: rgb(255, 255, 255); }
 
@@ -32,6 +32,10 @@ img{
 body{
 	background: rgb(238,54,41);
 	background: linear-gradient(90deg, rgba(238,54,41,1) 0%, rgba(239,72,61,1) 40%, rgba(255,107,61,1) 100%);
+	background: -moz-linear-gradient(90deg, rgba(238,54,41,1) 0%, rgba(239,72,61,1) 40%, rgba(255,107,61,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(238,54,41,1) 0%, rgba(239,72,61,1) 40%, rgba(255,107,61,1) 100%);
+	background: linear-gradient(90deg, rgba(238,54,41,1) 0%, rgba(239,72,61,1) 40%, rgba(255,107,61,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee3629",endColorstr="#ff6b3d",GradientType=1);
 }
 
 #coluna1 {
@@ -92,13 +96,14 @@ p{
 #share {
 
 	border-radius: 20px;
-	background-color: rgb(231, 214, 228);
-	width: 45%;
+	background-color: rgba(255, 255, 255, 0.753);
+	border: #420716;
+	width: 60%;
 	float: left;
 	position: fixed;
 	margin-left: 120px;
 	margin-top: 40px;
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 	align-content: center;
 	display: inline-table;
@@ -113,3 +118,29 @@ p{
 	  padding: 0;
 	  bottom: 0cm;
 	 }
+
+
+#twitter:hover{
+	background-color: #FFCD5D;
+	border-radius: 100%;
+}
+
+#wpp:hover{
+	background-color: #FFCD5D;
+	border-radius: 100%;
+  }
+
+#linkedin:hover{
+	background-color: #FFCD5D;
+	border-radius: 100%;	
+}
+
+#facebook:hover{
+	background-color: #FFCD5D;
+	border-radius: 100%;	
+}
+
+#email:hover{
+	background-color: #FFCD5D;
+	border-radius: 100%;	
+}
