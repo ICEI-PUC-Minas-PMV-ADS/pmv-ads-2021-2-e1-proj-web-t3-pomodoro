@@ -16,6 +16,17 @@ h1{
 	font-family: Montserrat;
 }
 
+h3{
+	color: rgb(250, 250, 250);
+	display: flex;
+	justify-content: center;
+	height: 80px;
+	align-items: center;
+	text-shadow: 0px 4px 4px #420716;
+	font-family: Montserrat;
+	font-weight: bold;
+}
+
 
 .btn-primary { background-color: rgb(255, 255, 255); }
 
@@ -99,10 +110,9 @@ p{
 	background-color: rgba(255, 255, 255, 0.753);
 	border: #420716;
 	width: 60%;
-	float: left;
-	position: fixed;
-	margin-left: 120px;
+	position: absolute;
 	margin-top: 40px;
+	margin-left: 250px;
 	padding: 10px;
 	text-align: center;
 	align-content: center;
@@ -143,4 +153,24 @@ p{
 #email:hover{
 	background-color: #FFCD5D;
 	border-radius: 100%;	
+}
+
+#people{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul{
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.363);
+	border: #420716;
+	width: 60%;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 250px;
+	padding: 10px;
+	text-align: center;
+	align-content: center;
+	line-break: strict;
 }
