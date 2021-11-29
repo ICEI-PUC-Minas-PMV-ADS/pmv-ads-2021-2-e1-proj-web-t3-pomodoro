@@ -28,14 +28,6 @@ h2{
  text-shadow: 0px 4px 4px #420716;
 }
 
-h3{
-  font-size: 150%;
-  color: #ffffff;
-  font-weight: 800px;
-  text-shadow: 0px 4px 4px #420716;
-  font-family: Montserrat;
-}
-
 p{
  font-family: Montserrat;
  text-align: center;
@@ -54,16 +46,25 @@ p{
 
 /*LISTA TO-DO INICIO*/
 #lista {
-  top: 300px;
-  right: 10px;
-  display: flex;
-  position:fixed;
+  right: 20px;
+  height: 100%;
+  position: absolute;
   transition: all .5s;
+  
 }
 .intro {
   margin: 30px 0px;
   font-weight: bold;
 }
+
+#lista h1 {
+  font-size: 180%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800px;
+  text-align: center;
+}
+
 
 
 .dados{
@@ -74,7 +75,7 @@ p{
 
 #enter {
   border: none;
-  padding: 5px 12px;
+  padding: 5px 15px;
   border-radius: 5px;
   color: #f289a5;
   background-color: #2bd266;
@@ -100,6 +101,7 @@ p{
 ul {
   text-align: left;
   margin-top: 20px;
+  
 }
 
 
@@ -109,19 +111,20 @@ li {
   color: #ffffff;
   text-transform: capitalize;
   font-weight: 600;
-  border: none;
+  border: 2px solid #025f70;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #da976ad5;
+  background: #b1b1b1;
   transition: all 0.75s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5 ease;
+  align-items: center;
 }
 
 li:hover {
-  background: #da976ad5;
+  background: #f289a5;
 }
 
 li > button {
@@ -129,7 +132,7 @@ li > button {
   background: none;
   border: none;
   float: right !important;
-  color: #1d1e1f;
+  color: #025f70;
   font-weight: 800;
 }
 
@@ -153,6 +156,8 @@ input {
   display: none;
 }
 
+
+
 /*LISTA TO-DO FIM*/
 
 
@@ -175,7 +180,6 @@ input {
 time {
   font-family: Concert One;
   margin-top: 20px;
-  text-align: center;
   }
   
 button {
@@ -232,14 +236,12 @@ input[type="checkbox"]
 }
 
 nav{
-  background-color: rgba(43, 21, 21, 0.282);
-  width: 325px;
+  background-color: rgba(16, 16, 17, 0.282);
+  width: 350px;
   left: -350px;
-  height: 250%;
-  padding: 20px;
+  height: 100%;
   position: absolute;
   transition: all .5s;
-  border-radius: 10px;
 }
 
 input[type="checkbox"]:checked ~ nav{
@@ -250,20 +252,18 @@ transform: translateX(350px); /*faz o menu aparecer*/
 ul{
   top: 10%;
   position: absolute;
-  width: 250px;
+  width: 100%;
 }
 
 a{
   color: white;
   display: block;
-  padding: 15px 10px;
+  padding: 20px 5px;
 }
 
 a:hover{
-  background-color: rgb(230, 217, 176); /*Cor quando o mouse é posicionado no menu*/
+  background-color: rgb(176,224,230); /*Cor quando o mouse é posicionado no menu*/
   color: black;
-  border-radius: 15px;
-  width: 200px;
 }
 
 label{
@@ -271,7 +271,6 @@ label{
   padding: 15px;
   position: absolute; /*alinha o icone do menu*/
   z-index: 1; /*faz o menu sumir*/
-  
 }
 
 /*MENU LATERAL FIM*/
@@ -290,8 +289,8 @@ label{
 /*TEMA*/
 .tema {
   position: fixed;
-  top: 40px;
-  right: 15px;
+  top: 12px;
+  right: 10px;
   display: flex;
 
 }
@@ -309,8 +308,8 @@ label{
 /*MODO ZEN*/
 .zen {
   position: fixed;
-  top: 70px;
-  right: 15px;
+  top: 50px;
+  right: 10px;
   display: flex;
 
 }
@@ -322,11 +321,12 @@ label{
 }
 
 /*OCULTAR CRONOMETRO*/
-
-
 /* Checkbox */
 #toggle-1 {
   display:none;
+  flex-direction: row;
+justify-content: center;
+align-items: center;
 }
  
 label { 
@@ -354,57 +354,57 @@ img{
 /* BARRA DE Progresso*/
 
 
-body {
-  box-sizing: border-box;
+.graph {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  display: flex;
   justify-content: center;
-  
-}
-.progress {
-  width: 90%;
-  height: 15px;
-  background: white;
-  border-radius: 0px;
-  width: 240px;
-  margin: 30px;
-  right: 0px;
-
+  align-items: center;
 }
 
-.progress-bar {
+#button1{
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  transition: all .5s;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+
+svg {
   position: absolute;
-  height: 15px;
-  background: #f289a5;
-  animation: progress-animation 5s linear;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  fill: transparent;
+  stroke-width: 12px;
+  stroke: #ddd;
+}
+
+:root {
+  --size: 255;
+}
+
+.graph svg.cor {
+  stroke: #f03869;
+  stroke-dasharray: 255;
+  stroke-dashoffset: calc(var(--size) - 36.42);
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
  
     
-}
-@keyframes progress-animation{
-  0% { width: 0%; } 
-  100% { width: 73%; }
-}
 
-@keyframes load {
-  0% {
-      width: 0%;
-  }
-  10% {
-      width: 10%;
-  }
-  20% {
-      width: 20%;
-  }
-  30% {
-      width: 30%;
-  }
-  40% {
-      width: 40%;
-  }
-  50% {
-      width: 50%;
-  }
-  60% {
-      width: 60%;
-  }
-  73% {
-      width: 73%;
-  }
+
